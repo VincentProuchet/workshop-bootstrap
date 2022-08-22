@@ -50,14 +50,14 @@ fit=no">
     <!-- Edition d'un collaborateur -->
     <div class="container-fluid row">
         <!-- Photo -->
-        <div class="col-4">
-            <img class="card-img " src="" alt="" srcset="" aria-placeholder="photo">
+        <div class="col-sm-4 ">
+            <img class="card-img card-img-top" src="./img/nothig.png" alt="Nothing" aria-placeholder="photo">
         </div>
-        <div class="col-8">
+        <div class="col-sm-12 col-md-8 col-lg-8">
             <!-- id  -->
-            <div class="d-flex">
-                <h4 class="">Nom Prénom - Matricule</h4>
-                <div class="offset-6 col-1 form-check">
+            <div class="d-flex row ">
+                <h4 class="col-6">Nom Prénom - Matricule</h4>
+                <div class="col-1 justify-content-end form-check">
                     <input class="form-check-input " type="checkbox" name="desactiver" id="desactiver">
                     <label class="form-check-label" for="desactiver">désactiver</label>
                 </div>
@@ -66,11 +66,10 @@ fit=no">
                 <form action="" class=" d-flex flex-column needs-validation">
                     <!-- Identity -->
                     <div class="card">
-                        <div class="card-header text-left">
-                            <a class="card-link" data-toggle="collapse" href="#collapseOne">
-                                Identité
-                            </a>
-                        </div>
+
+                        <button class="card-header text-left btn card-link" data-toggle="collapse"
+                            data-target="#collapseOne">Identité </button>
+
                         <div class="collapse show" data-parent="#accordion" id="collapseOne">
                             <div class="card-body ">
                                 <!-- civilitée -->
@@ -79,8 +78,8 @@ fit=no">
                                 <div class="form-group row">
 
                                     <!-- Select group -->
-                                    <label for="civilite" class="col-6 col-form-label">Civilité</label>
-                                    <div class="col-6">
+                                    <label for="civilite" class="col-5 col-form-label">Civilité</label>
+                                    <div class="col-7">
 
                                         <select class="form-control " name="civilite" id="civilite">
                                             <option value="Mr">Monsieur</option>
@@ -92,8 +91,8 @@ fit=no">
                                 </div>
 
                                 <div class="form-group row">
-                                    <label for="nomNouveauCollaborateur " class="col-6 col-form-label">Nom</label>
-                                    <div class="col-6">
+                                    <label for="nomNouveauCollaborateur " class="col-5 col-form-label">Nom</label>
+                                    <div class="col-7">
                                         <input class="form-control " type="text" name="nom" id="nomNouveauCollaborateur"
                                             placeholder="" required>
                                         <div class="invalid-feedback">Le nom est obligatoire</div>
@@ -101,17 +100,17 @@ fit=no">
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label for="prenomNouveauCollaborateur " class="col-6 col-form-label">Prénom</label>
-                                    <div class="col-6">
+                                    <label for="prenomNouveauCollaborateur " class="col-5 col-form-label">Prénom</label>
+                                    <div class="col-7">
                                         <input class="form-control" type="text" name="prenom"
                                             id="prenomNouveauCollaborateur" required>
                                         <div class="invalid-feedback">Le prénom est obligatoire</div>
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label for="DoBNouveauCollaborateur " class="col-6 col-form-label">Date de
+                                    <label for="DoBNouveauCollaborateur " class="col-5 col-form-label">Date de
                                         naissance</label>
-                                    <div class="col-6">
+                                    <div class="col-7">
                                         <input class="form-control" type="date" name="" id="DoBNouveauCollaborateur"
                                             required>
                                         <div class="invalid-feedback">La date de naissance est obligatoire</div>
@@ -119,8 +118,8 @@ fit=no">
                                 </div>
                                 <div class="form-group row">
                                     <label for="addresseNouveauCollaborateur"
-                                        class="col-6 col-form-label">Addresse</label>
-                                    <div class="col-6">
+                                        class="col-5 col-form-label">Addresse</label>
+                                    <div class="col-7">
                                         <textarea class="border col-12" name="Addresse"
                                             id="addresseNouveauCollaborateur" rows="3" required>
                             </textarea>
@@ -128,18 +127,18 @@ fit=no">
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label for="NSSNouveauCollaborateur " class="col-6 col-form-label">Numéro de
+                                    <label for="NSSNouveauCollaborateur " class="col-5 col-form-label">Numéro de
                                         sécurité
                                         sociale</label>
-                                    <div class="col-6">
+                                    <div class="col-7">
                                         <input class="form-control" name="" id="NSSNouveauCollaborateur" required>
                                         <div class="invalid-feedback">Le numéro de sécurité est obligatoire</div>
 
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label for="Telephone" class="col-6 col-form-label">Téléphone</label>
-                                    <div class="col-6">
+                                    <label for="Telephone" class="col-5 col-form-label">Téléphone</label>
+                                    <div class="col-7">
                                         <input class="form-control" name="Telephone" id="Telephone" required>
                                         <div class="invalid-feedback">Le de téléphone est obligatoire</div>
 
@@ -150,31 +149,53 @@ fit=no">
                     </div>
                     <!-- poste -->
                     <div class="card">
-                        <div class="card-header text-left">
-                            <a class="card-link" data-toggle="collapse" href="#collapseTwo">
-                                Poste
-                            </a>
-
-                        </div>
+                        <button class="card-header text-left btn card-link" data-toggle="collapse"
+                            data-target="#collapseTwo">Poste </button>
                         <div class="collapse hide" data-parent="#accordion" id="collapseTwo">
 
                             <div class="card-body ">
+                                <!--Département  -->
+                                <div class="form-group row">
 
+                                    <!-- Select group -->
+                                    <label for="departement" class="col-5 col-form-label">Département</label>
+                                    <div class="col-7">
+
+                                        <select class="form-control " name="departement" id="departement">
+
+                                        </select>
+                                    </div>
+
+
+                                </div>
+                                <!-- poste  -->
+                                <div class="form-group row">
+                                    <label for="poste" class="col-5 col-form-label">Poste</label>
+                                    <div class="col-7">
+                                        <input class="form-control " type="text" name="poste" id="poste" placeholder=""
+                                            required>
+                                        <div class="invalid-feedback">Le Poste est obligatoire</div>
+
+                                    </div>
+                                </div>
                             </div>
+
+
                         </div>
                     </div>
                     <!-- Banque -->
                     <div class="card">
-                        <div class="card-header text-left">
-                            <a class="card-link" data-toggle="collapse" href="#collapseThree">
-                                Coordonées bancaires
-
-                            </a>
-
-                        </div>
+                        <button class="card-header text-left btn card-link" data-toggle="collapse"
+                            data-target="#collapseThree">Coordonées bancaires </button>
                         <div class="collapse hide" data-parent="#accordion" id="collapseThree">
 
                             <div class="card-body ">
+                                <div class="form-group row">
+
+
+
+
+                                </div>
 
                             </div>
                         </div>
