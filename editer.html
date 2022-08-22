@@ -57,8 +57,8 @@ fit=no">
             <!-- id  -->
             <div class="d-flex">
                 <h4 class="">Nom Prénom - Matricule</h4>
-                <div class="form-check-inline justify-content-end ">
-                    <input class="form-check-input" type="checkbox" name="desactiver" id="desactiver">
+                <div class="offset-6 col-1 form-check">
+                    <input class="form-check-input " type="checkbox" name="desactiver" id="desactiver">
                     <label class="form-check-label" for="desactiver">désactiver</label>
                 </div>
             </div>
@@ -73,20 +73,26 @@ fit=no">
                         </div>
                         <div class="collapse show" data-parent="#accordion" id="collapseOne">
                             <div class="card-body ">
+                                <!-- civilitée -->
 
-                                <div class="form-groug row">
 
+                                <div class="form-group row">
 
-                                    <label for="civilite" class="col-6">Civilité</label>
-                                    <select class="col-5" name="civilite" id="civilite">
-                                        <option value="Mr">Monsieur</option>
-                                        <option value="Mme">Madame</option>
-                                    </select>
+                                    <!-- Select group -->
+                                    <label for="civilite" class="col-6 col-form-label">Civilité</label>
+                                    <div class="col-6">
+
+                                        <select class="form-control " name="civilite" id="civilite">
+                                            <option value="Mr">Monsieur</option>
+                                            <option value="Mme">Madame</option>
+                                        </select>
+                                    </div>
 
 
                                 </div>
-                                <div class="form-groug row">
-                                    <label for="nomNouveauCollaborateur " class="col-6">Nom</label>
+
+                                <div class="form-group row">
+                                    <label for="nomNouveauCollaborateur " class="col-6 col-form-label">Nom</label>
                                     <div class="col-6">
                                         <input class="form-control " type="text" name="nom" id="nomNouveauCollaborateur"
                                             placeholder="" required>
@@ -94,24 +100,26 @@ fit=no">
 
                                     </div>
                                 </div>
-                                <div class="form-groug row">
-                                    <label for="prenomNouveauCollaborateur " class="col-6">Prénom</label>
+                                <div class="form-group row">
+                                    <label for="prenomNouveauCollaborateur " class="col-6 col-form-label">Prénom</label>
                                     <div class="col-6">
                                         <input class="form-control" type="text" name="prenom"
                                             id="prenomNouveauCollaborateur" required>
                                         <div class="invalid-feedback">Le prénom est obligatoire</div>
                                     </div>
                                 </div>
-                                <div class="form-groug row">
-                                    <label for="DoBNouveauCollaborateur " class="col-6">Date de naissance</label>
+                                <div class="form-group row">
+                                    <label for="DoBNouveauCollaborateur " class="col-6 col-form-label">Date de
+                                        naissance</label>
                                     <div class="col-6">
                                         <input class="form-control" type="date" name="" id="DoBNouveauCollaborateur"
                                             required>
                                         <div class="invalid-feedback">La date de naissance est obligatoire</div>
                                     </div>
                                 </div>
-                                <div class="form-groug row">
-                                    <label for="addresseNouveauCollaborateur" class="col-6">Addresse</label>
+                                <div class="form-group row">
+                                    <label for="addresseNouveauCollaborateur"
+                                        class="col-6 col-form-label">Addresse</label>
                                     <div class="col-6">
                                         <textarea class="border col-12" name="Addresse"
                                             id="addresseNouveauCollaborateur" rows="3" required>
@@ -119,8 +127,9 @@ fit=no">
                                         <div class="invalid-feedback">L'addresse est obligatoire</div>
                                     </div>
                                 </div>
-                                <div class="form-groug row">
-                                    <label for="NSSNouveauCollaborateur " class="col-6">Numéro de sécurité
+                                <div class="form-group row">
+                                    <label for="NSSNouveauCollaborateur " class="col-6 col-form-label">Numéro de
+                                        sécurité
                                         sociale</label>
                                     <div class="col-6">
                                         <input class="form-control" name="" id="NSSNouveauCollaborateur" required>
@@ -128,8 +137,8 @@ fit=no">
 
                                     </div>
                                 </div>
-                                <div class="form-groug row">
-                                    <label for="Telephone" class="col-6">Téléphone</label>
+                                <div class="form-group row">
+                                    <label for="Telephone" class="col-6 col-form-label">Téléphone</label>
                                     <div class="col-6">
                                         <input class="form-control" name="Telephone" id="Telephone" required>
                                         <div class="invalid-feedback">Le de téléphone est obligatoire</div>
