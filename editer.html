@@ -31,10 +31,10 @@ fit=no">
                     </a>
                 </li>
                 <li class="nav-item justify-content-center">
-                    <button class="nav-link  btn btn-light" data-toggle="modal" data-target="#FiltreCollaborateurs">
+                    <a class="nav-link  btn btn-light" href="stats.html">
                         Statistiques
 
-                    </button>
+                    </a>
                 </li>
                 <li class="nav-item justify-content-center">
                     <button class="nav-link  btn btn-light" data-toggle="modal" data-target="#FiltreCollaborateurs">
@@ -50,13 +50,14 @@ fit=no">
     <!-- Edition d'un collaborateur -->
 
     <!-- Photo -->
-    <form action="" class="container-fluid row needs-validation">
+    <form action="collaborateurs.html" class="container-fluid row needs-validation">
 
 
         <div class="col-sm-4">
-            <input class="card-img card-img-top" type="image" src="" alt="Nothing">
+            <input class="card-img card-img-top border border-dark" width="400" type="image" src="./img/176008.png"
+                alt="Nothing">
         </div>
-        <div class="col-sm-12 col-md-8 col-lg-8">
+        <div class="col-sm-8 col-md-8 col-lg-8">
             <!-- id  -->
             <div class="d-flex row ">
                 <h4 class="col-6">Nom Prénom - Matricule</h4>
@@ -162,7 +163,9 @@ fit=no">
                                 <div class="col-7">
 
                                     <select class="form-control " name="departement" id="departement">
-
+                                        <option value="compta">Comptabilité</option>
+                                        <option value="rh">Resources Humaines</option>
+                                        <option value="dsi">Informatique</option>
                                     </select>
                                 </div>
 
@@ -215,7 +218,7 @@ fit=no">
                 <!-- Sauvegarder boutton-->
                 <div class="row justify-content-end">
 
-                    <input class="m-3 p-3  " type="button" value="Sauvegarder">
+                    <input class="m-3 p-3  " type="submit" value="Sauvegarder" formaction="collaborateurs.html">
 
                 </div>
             </div>
